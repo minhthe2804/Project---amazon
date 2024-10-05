@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In</title>
+        <!-- Link reset -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+
+        <!-- link styles  -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- link detail -->
+        <link rel="stylesheet" href="./assets/css/detail.css" />
+
+        <!-- link sign in  -->
+        <link rel="stylesheet" href="./assets/css/sign.css" />
+
+        <!-- link sign up -->
+        <link rel="stylesheet" href="./assets/css/signup.css" />
+
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <a href="./">
+            <img
+                src="./assets/image/amazon_logo_dark.png"
+                alt=""
+                class="img__signin"
+            />
+        </a>
+        <div class="singin">
+            <div class="sign__in">
+                <div class="signin__blog">
+                    <div class="signin__content">
+                        <h2 class="signin__heading">Sign in</h2>
+                        <form action="" class="form">
+                            <div class="form__group">
+                                <label for="emailphone" class="email__phone"
+                                    >Email or mobile phone number</label
+                                >
+                                <input
+                                    type="text"
+                                    name="emailphone"
+                                    id="emailphone"
+                                    class="signin__emailphone"
+                                />
+                                <!-- password -->
+                                <div class="form__group form__group--signin">
+                                    <label for="pass" class="email__phone"
+                                        >Password</label
+                                    >
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        id="pass"
+                                        class="signup__password"
+                                        placeholder="At least 8 characters"
+                                        autocomplete="off"
+                                    />
+                                    <i
+                                        class="fa-solid fa-eye eye__one eye__signin"
+                                    ></i>
+                                    <div
+                                        class="line__eye line__eye--signin"
+                                    ></div>
+                                    <p class="text__novalid">
+                                        Mật khẩu của bạn phải dài ít nhất 8 kí
+                                        tự
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="submit" class="signin__btn">
+                                Continue
+                            </button>
+                        </form>
+                        <p class="by__continuing">
+                            By continuing, you agree to Amazon's
+                            <span>Conditions of Use</span> and
+                            <span>Privacy Notice.</span>
+                        </p>
+
+                        <div class="need__row">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <p class="need">Need help?</p>
+                        </div>
+                        <div class="signin__line"></div>
+                        <p class="buying">Buying for work?</p>
+                        <p class="sign__shopon">Shop on Amazon Business</p>
+                    </div>
+                </div>
+                <div class="newto__row">
+                    <hr />
+                    <p class="newto">New to Amazon?</p>
+                    <hr />
+                </div>
+                <a href="./signup.html" class="create__account"
+                    >Create your Amazon account
+                </a>
+            </div>
+            <div class="singline"></div>
+            <div class="sign__footer">
+                <div class="sign__footer--row">
+                    <p class="sign__footer--title">Conditions of Use</p>
+                    <p class="sign__footer--title">Privacy Notice</p>
+                    <p class="sign__footer--title">Help</p>
+                </div>
+                <p class="sign__footer__desc">
+                    © 1996-2024, Amazon.com, Inc. or its affiliates
+                </p>
+            </div>
+        </div>
+        <script type="module" src="./signin.js"></script>
+    </body>
+</html>

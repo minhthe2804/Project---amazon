@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart</title>
+        <!-- Link reset -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+
+        <!-- link styles  -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- link detail -->
+        <link rel="stylesheet" href="./assets/css/detail.css" />
+
+        <!-- link cart -->
+        <link rel="stylesheet" href="./assets/css/cart.css" />
+
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="content">
+                <nav class="navbar">
+                    <!-- logo -->
+                    <figure class="navbar__logo">
+                        <a href="./">
+                            <img
+                                src="./assets/image/amazon_logo.png"
+                                alt=""
+                                class="logo__navbar"
+                            />
+                        </a>
+                    </figure>
+
+                    <!-- country -->
+                    <div class="navbar__country">
+                        <p class="navbar__delive">Deliver to</p>
+                        <div class="navbar__vn">
+                            <figure class="navbar__location">
+                                <img
+                                    src="./assets/image/location_icon.png"
+                                    alt=""
+                                    class="location__navbar"
+                                />
+                            </figure>
+                            <p class="navbar__vietnam">Vietnam</p>
+                        </div>
+                    </div>
+
+                    <!-- search -->
+                    <div class="navbar__search">
+                        <div class="navbar__blog">
+                            <p class="navbar__all">All</p>
+                            <figure class="navbar__dropdown">
+                                <img
+                                    src="./assets/image/dropdown_icon.png"
+                                    alt=""
+                                    class="dropdown__navbar"
+                                />
+                            </figure>
+                        </div>
+                        <input
+                            type="text"
+                            name=""
+                            id="input__search"
+                            class="input__search"
+                            placeholder="Search Amazon"
+                        />
+                        <figure class="navbar__camera">
+                            <img
+                                src="./assets/image/icon-camera.png"
+                                alt=""
+                                class="camera__navbar"
+                            />
+                        </figure>
+                        <figure class="search__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </figure>
+                    </div>
+
+                    <!-- city -->
+                    <div class="navbar__citys">
+                        <figure class="navbar__flag">
+                            <img
+                                src="./assets/image/us_flag.png"
+                                alt=""
+                                class="flag__navbar"
+                            />
+                        </figure>
+                        <div class="navbar__citys--row">
+                            <p class="navbar__city">En</p>
+                            <figure
+                                class="navbar__dropdown navbar__dropdown--near"
+                            >
+                                <img
+                                    src="./assets/image/dropdown_icon.png"
+                                    alt=""
+                                    class="dropdown__navbar"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- sigin -->
+                    <a href="./signin.html">
+                        <div class="navbar__signin">
+                            <p class="signin">Hello, sign in</p>
+                            <div class="sign__in--row">
+                                <p class="account">Account & Lists</p>
+                                <figure
+                                    class="navbar__dropdown navbar__dropdown--right"
+                                >
+                                    <img
+                                        src="./assets/image/dropdown_icon.png"
+                                        alt=""
+                                        class="dropdown__navbar"
+                                    />
+                                </figure>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- return -->
+                    <div class="navbar__return">
+                        <p class="return">Returns</p>
+                        <div class="return__row">
+                            <p class="order">& Orders</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <a href="./cart.html">
+                        <div class="navbar__cart">
+                            <figure class="cart__img">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </figure>
+                            <p class="cart__title">Cart</p>
+                            <div class="cart__notify">
+                                <span class="notify__number">0</span>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <!-- Menu -->
+            <div class="menu">
+                <div class="content">
+                    <div class="menu__content">
+                        <div class="menu__all--row">
+                            <figure class="menu__icon">
+                                <img
+                                    src="./assets/image/menu_icon.png"
+                                    alt=""
+                                    class="icon__menu"
+                                />
+                            </figure>
+                            <p class="all">All</p>
+                        </div>
+                        <div class="menu__list">
+                            <p class="menu__item">Today's Deal</p>
+                            <p class="menu__item">Buy again</p>
+                            <p class="menu__item">Customer Service</p>
+                            <p class="menu__item">Registry</p>
+                            <p class="menu__item">Gift Cards</p>
+                            <p class="menu__item">Sell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <div class="content">
+                    <!-- cart content -->
+                    <div class="cart__content">
+                        <!-- cart - shopping -->
+                        <div class="cart__shopping">
+                            <div class="cart__shopping--content">
+                                <h2 class="cart__heading">Shopping Cart</h2>
+                                <p class="deselect">Deselect all items</p>
+                                <p class="cart__price">Price</p>
+                                <div class="cart__list--product"></div>
+                                <div class="cart__line cart__line--top"></div>
+                                <p class="subtotal">
+                                    Subtotal (0 item):<b>$0</b>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- cart - artircle -->
+                        <div class="cart__artircle">
+                            <!-- cart total -->
+                            <div class="cart__total">
+                                <div class="cart__artircle--content">
+                                    <p class="subtotal subtotal__top">
+                                        Subtotal (0 item):<b>$0</b>
+                                    </p>
+                                    <div class="this__subtotal--row">
+                                        <input
+                                            type="checkbox"
+                                            name=""
+                                            id=""
+                                            class="thissub__check"
+                                        />
+                                        <p class="thisoder">
+                                            This order contains a gift
+                                        </p>
+                                    </div>
+                                    <button class="proced">
+                                        Proceed to checkout
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- cart prime -->
+                            <div class="cart__prime">
+                                <div class="cart__prime--content">
+                                    <div class="cart__prime--row">
+                                        <img
+                                            src="https://m.media-amazon.com/images/G/01/marketing/prime/logos/established/2021/prime-logo-rgb-prime-blue._CB601899009_.svg"
+                                            alt=""
+                                            class="img__prime"
+                                        />
+                                        <p class="freefast">
+                                            Free fast delivery. No order
+                                            minimum. Exclusive savings. Start
+                                            your 30-day free trial of Prime.
+                                        </p>
+                                    </div>
+                                    <button class="join__prime">
+                                        Join Prime
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- cart customer -->
+                            <div class="cart__customer">
+                                <div class="cart__customer--content">
+                                    <h2 class="customer__heading">
+                                        Customers Who Bought Items in Your
+                                        Recent History Also Bought
+                                    </h2>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/519jBWXQlQL._AC_UL200_SR200,200_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f. Halo Glow Highlight
+                                                Beauty Wan...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span>2,001</span>
+                                            </p>
+                                            <p class="customer__price">$9.00</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/61vKMD8VMFL._AC_UL200_SR200,200_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f. Glow Reviver Lip Oil,
+                                                Nourishing Tinted...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span>3,452</span>
+                                            </p>
+                                            <p class="customer__price">$8.00</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/51N2hUP7+pL._AC_UL200_SR200,200_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f. Makeup Mist & Set,
+                                                Hydrating Setting Spray...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span>13,089</span>
+                                            </p>
+                                            <p class="customer__price">$7.80</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/51u+oPAJxfL._AC_UL200_SR200,200_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f. Camo Color Corrector,
+                                                Hydrating &...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span>5,922</span>
+                                            </p>
+                                            <p class="customer__price">$4.00</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/61KedtnoewL._AC_UL100_SR100,100_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f. Monochromatic Multi
+                                                Stick, Luxuriously...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span>39,591</span>
+                                            </p>
+                                            <p class="customer__price">$5.00</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/610qJYb80+L._AC_UL100_SR100,100_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f. Cosmetics Brow Lift,
+                                                Clear Eyebrow...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span>7,142</span>
+                                            </p>
+                                            <p class="customer__price">$6.00</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/51mTwGhChrL._AC_UL100_SR100,100_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f., Instant Lift Brow
+                                                Pencil, Dual-Sided,...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span> 46,248</span>
+                                            </p>
+                                            <p class="customer__price">$3.00</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- customer__product--row -->
+                                    <div class="customer__product--row">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/71784-35ptL._AC_UL100_SR100,100_.jpg"
+                                            alt=""
+                                            class="img__customer"
+                                        />
+                                        <div class="customer__product--column">
+                                            <p class="customer__describe">
+                                                e.l.f. Halo Glow Powder Puff,
+                                                Soft, Reusable...
+                                            </p>
+                                            <p class="statistical">
+                                                <i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star star--top"
+                                                ></i
+                                                ><i
+                                                    class="fa-solid fa-star-half-stroke star--top"
+                                                ></i
+                                                ><span>509</span>
+                                            </p>
+                                            <p class="customer__price">$4.00</p>
+                                            <button
+                                                class="acces__btn customer__btn"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cart storage -->
+                    <div class="cart__storage">
+                        <div class="cart__storage__content">
+                            <p class="storage__heading">Your Items</p>
+                            <div class="cart__storage--row">
+                                <div class="cart__storage--column">
+                                    <p class="storage__title">
+                                        No items saved for later
+                                    </p>
+                                </div>
+
+                                <div class="cart__storage--column">
+                                    <p class="storage__title active">
+                                        Buy it again
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- <div class="storage__line line"></div> -->
+                        </div>
+                        <div class="noitem__row">
+                            <div class="noitem">
+                                <p class="noitem__title">No items saved</p>
+                            </div>
+                            <div class="noitem display">
+                                <p class="noitem__title">
+                                    No items to Buy again.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="the__price">
+                        The price and availability of items at Amazon.com are
+                        subject to change. The Cart is a temporary place to
+                        store a list of your items and reflects each item's most
+                        recent price. <span>Learn more</span>
+                    </p>
+                    <p class="do__you">
+                        Do you have a gift card or promotional code? We'll ask
+                        you to enter your claim code when it's time to pay.
+                    </p>
+                    <!-- Best sellers -->
+                    <div class="bestsell bestsell__top">
+                        <div class="content">
+                            <div class="bestsell__content">
+                                <h2 class="bestsell__heading">
+                                    Top purchases in the last 30 days
+                                </h2>
+                                <div class="bestsell__row">
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/41WKtIOD8TL._AC_SR160,160_.jpg"
+                                        alt=""
+                                        class="img__bestsell"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/414T7blaL6L._AC_SR160,160_.jpg"
+                                        alt=""
+                                        class="img__bestsell"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/71MGiPTwXAL._AC_SR160,160_.jpg"
+                                        alt=""
+                                        class="img__bestsell"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/81Q5bOpJw+L._AC_SR160,160_.jpg"
+                                        alt=""
+                                        class="img__bestsell"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/61oGokyedML._AC_SR160,160_.jpg"
+                                        alt=""
+                                        class="img__bestsell"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/614IQytqAuL._AC_SR160,160_.jpg"
+                                        alt=""
+                                        class="img__bestsell"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/71MGiPTwXAL._AC_SR160,160_.jpg"
+                                        alt=""
+                                        class="img__bestsell"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/41o-o1sxliL._AC_SR420,330_.jpg"
+                                        alt=""
+                                        class="img__bestsell img__bestsell--heights"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/31HwuE6ZnxL._AC_SR320,320_.jpg"
+                                        alt=""
+                                        class="img__bestsell img__bestsell--heights"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/41u8gY4L2DL._AC_SR320,320_.jpg"
+                                        alt=""
+                                        class="img__bestsell img__bestsell--heights"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/413v4O9M45L._AC_SR320,320_.jpg"
+                                        alt=""
+                                        class="img__bestsell img__bestsell--heights"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/41pywRTlaIL._AC_SR320,320_.jpg"
+                                        alt=""
+                                        class="img__bestsell img__bestsell--heights"
+                                    />
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/41xqZMxoVWL._AC_SR320,320_.jpg"
+                                        alt=""
+                                        class="img__bestsell img__bestsell--heights"
+                                    />
+                                </div>
+                            </div>
+                            <button class="bestsell__btn bestsell__btn--left">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="bestsell__btn bestsell__btn--right">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- blog back to top -->
+            <div class="blogback">
+                <a href="#" class="blogback__content">
+                    <p class="blogback__title">Back to top</p>
+                </a>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__content--top">
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Get to Know Us</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Careers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">About Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Investor Relations</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Devices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Science</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Make Money with Us</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Sell products on Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Sell on Amazon Business</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Sell apps on Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Become an Affiliate</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Advertise Your Products</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Self-Publish with Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Host an Amazon Hub</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">›See More Make Money with Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Amazon Payment Products</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Amazon Business Card</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Shop with Points</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Reload Your Balance</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Currency Converter</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Let Us Help You</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Amazon and COVID-<br />19</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Your Account</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Your Orders</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Shipping Rates & <br />Policies</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Returns & <br />Replacements</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Manage Your <br />Content and Devices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Assistant</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__contact">
+                <img
+                    src="./assets/image/amazon_logo.png"
+                    alt=""
+                    class="footer__logo"
+                />
+                <div class="footer__contact--row">
+                    <a href="" class="footer__btn">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <p class="btn__title">English</p>
+                        <div class="icon__caret">
+                            <i class="fa-solid fa-caret-up"></i>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </a>
+                    <a href="" class="footer__btn footer__btn--width">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p class="btn__title">USD - US. Dollar</p>
+                    </a>
+                    <a href="" class="footer__btn footer__btn--widthshort">
+                        <img
+                            src="./assets/image/us_flag.png"
+                            alt=""
+                            class="img__american"
+                        />
+                        <p class="btn__title">United States</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- modal -->
+        <div class="modal"></div>
+        <script type="module" src="./cart.js"></script>
+    </body>
+</html>

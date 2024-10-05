@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detail</title>
+
+        <!-- Link reset -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+
+        <!-- link styles  -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- link detail -->
+        <link rel="stylesheet" href="./assets/css/detail.css" />
+
+        <!-- link sign in  -->
+        <link rel="stylesheet" href="./assets/css/sign.css" />
+
+        <!-- link sign up -->
+        <link rel="stylesheet" href="./assets/css/signup.css" />
+
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="content">
+                <nav class="navbar">
+                    <!-- logo -->
+                    <figure class="navbar__logo">
+                        <a href="./">
+                            <img
+                                src="./assets/image/amazon_logo.png"
+                                alt=""
+                                class="logo__navbar"
+                            />
+                        </a>
+                    </figure>
+
+                    <!-- country -->
+                    <div class="navbar__country">
+                        <p class="navbar__delive">Deliver to</p>
+                        <div class="navbar__vn">
+                            <figure class="navbar__location">
+                                <img
+                                    src="./assets/image/location_icon.png"
+                                    alt=""
+                                    class="location__navbar"
+                                />
+                            </figure>
+                            <p class="navbar__vietnam">Vietnam</p>
+                        </div>
+                    </div>
+
+                    <!-- search -->
+                    <div class="navbar__search">
+                        <div class="navbar__blog">
+                            <p class="navbar__all">All</p>
+                            <figure class="navbar__dropdown">
+                                <img
+                                    src="./assets/image/dropdown_icon.png"
+                                    alt=""
+                                    class="dropdown__navbar"
+                                />
+                            </figure>
+                        </div>
+                        <input
+                            type="text"
+                            name=""
+                            id="input__search"
+                            class="input__search"
+                            placeholder="Search Amazon"
+                        />
+                        <figure class="navbar__camera">
+                            <img
+                                src="./assets/image/icon-camera.png"
+                                alt=""
+                                class="camera__navbar"
+                            />
+                        </figure>
+                        <figure class="search__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </figure>
+                    </div>
+
+                    <!-- city -->
+                    <div class="navbar__citys">
+                        <figure class="navbar__flag">
+                            <img
+                                src="./assets/image/us_flag.png"
+                                alt=""
+                                class="flag__navbar"
+                            />
+                        </figure>
+                        <div class="navbar__citys--row">
+                            <p class="navbar__city">En</p>
+                            <figure
+                                class="navbar__dropdown navbar__dropdown--near"
+                            >
+                                <img
+                                    src="./assets/image/dropdown_icon.png"
+                                    alt=""
+                                    class="dropdown__navbar"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- sigin -->
+                    <a href="./signin.html">
+                        <div class="navbar__signin">
+                            <p class="signin">Hello, sign in</p>
+                            <div class="sign__in--row">
+                                <p class="account">Account & Lists</p>
+                                <figure
+                                    class="navbar__dropdown navbar__dropdown--right"
+                                >
+                                    <img
+                                        src="./assets/image/dropdown_icon.png"
+                                        alt=""
+                                        class="dropdown__navbar"
+                                    />
+                                </figure>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- return -->
+                    <div class="navbar__return">
+                        <p class="return">Returns</p>
+                        <div class="return__row">
+                            <p class="order">& Orders</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <a href="./cart.html">
+                        <div class="navbar__cart">
+                            <figure class="cart__img">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </figure>
+                            <p class="cart__title">Cart</p>
+                            <div class="cart__notify">
+                                <span class="notify__number">0</span>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <div class="menu">
+            <div class="content">
+                <div class="menu__content">
+                    <div class="menu__all--row">
+                        <figure class="menu__icon">
+                            <img
+                                src="./assets/image/menu_icon.png"
+                                alt=""
+                                class="icon__menu"
+                            />
+                        </figure>
+                        <p class="all">All</p>
+                    </div>
+                    <div class="menu__list">
+                        <p class="menu__item">Today's Deal</p>
+                        <p class="menu__item">Buy again</p>
+                        <p class="menu__item">Customer Service</p>
+                        <p class="menu__item">Registry</p>
+                        <p class="menu__item">Gift Cards</p>
+                        <p class="menu__item">Sell</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <!-- Deal -->
+            <div class="deil">
+                <!-- deail__header -->
+                <div class="deail__header">
+                    <img
+                        src="./assets/image/deatail-logo.webp"
+                        alt=""
+                        class="deail__logo"
+                    />
+                    <p class="your__gaming">
+                        Your Gaming's Ally, Promote Immersive Experiense.
+                    </p>
+                    <div class="prime__row">
+                        <!--  -->
+                        <div class="prime__column prime__column--left">
+                            <p class="prime__price">$26</p>
+                            <i class="fa-solid fa-check"></i>
+                            <p class="prime__title">prime</p>
+                        </div>
+                        <!--  -->
+                        <div class="prime__column prime__column--right">
+                            <p class="prime__save">Save 30%</p>
+                            <p class="prime__with">with coupon</p>
+                        </div>
+                        <img
+                            src="./assets/image/img-prime.webp"
+                            alt=""
+                            class="img__prime"
+                        />
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="deail__line"></div>
+                </div>
+                <div class="backto__row">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5 8.25 12l7.5-7.5"
+                        />
+                    </svg>
+                    <p class="backto">Back to results</p>
+                </div>
+                <!--  -->
+                <div class="deail__info">
+                    <div class="content">
+                        <div class="info__content">
+                            <!-- img -->
+                            <div class="deail__info--img">
+                                <div class="info__img--column">
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51q0meZK6WL._AC_US40_.jpg"
+                                            alt=""
+                                            class="img__info--smail active"
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51DiqbXVDVL._AC_US40_.jpg"
+                                            alt=""
+                                            class="img__info--smail"
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/61y41XOsW5L._AC_US40_.jpg"
+                                            alt=""
+                                            class="img__info--smail"
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51v1kqtiW5L._AC_US40_.jpg"
+                                            alt=""
+                                            class="img__info--smail"
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/61f793QHC8L._AC_US40_.jpg"
+                                            alt=""
+                                            class="img__info--smail"
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51Z5aXa3LUL._AC_US40_.jpg"
+                                            alt=""
+                                            class="img__info--smail"
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/71sOPtDbN7L._AC_SL1000_.jpg"
+                                            alt=""
+                                            class="img__info--smail"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="info__img--zoom">
+                                    <a href="#">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SX425_.jpg"
+                                            alt=""
+                                            class="img__zoom"
+                                        />
+                                    </a>
+                                    <p class="info__zoom--title">
+                                        Roll over image to zoom in
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- body -->
+                            <div class="info__body">
+                                <p class="info__bengo">
+                                    BENGOO G9000 Stereo Gaming Headset for PS4
+                                    <br />PC Xbox One PS5 Controller, Noise
+                                    Cancelling Over Ear Headphones with Mic, LED
+                                    Light, Bass <br />Surround, Soft Memory
+                                    Earmuffs (Blue)
+                                </p>
+                                <p class="info__visit">
+                                    Visit the BENGOO Store
+                                </p>
+                                <!--  -->
+                                <div class="info__evaluate--row">
+                                    <!--  -->
+                                    <div class="info__star--row">
+                                        <p class="number__star">4.3</p>
+                                        <div class="star__row">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i
+                                                class="fa-solid fa-star-half-stroke"
+                                            ></i>
+                                        </div>
+                                        <i
+                                            class="fa-solid fa-caret-down fa-dropdown"
+                                        ></i>
+                                    </div>
+                                    <!--  -->
+                                    <div class="info__rating--row">
+                                        <p class="info__rating">
+                                            106,040 ratings
+                                        </p>
+                                        <div class="rating__line"></div>
+                                        <p class="searchthis">
+                                            Search this page
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="info__susta--row">
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/01GK70BG4uL.svg"
+                                        alt=""
+                                        class="img__leaf"
+                                    />
+                                    <p class="susta__desc">
+                                        1 sustainability feature
+                                    </p>
+                                    <i
+                                        class="fa-solid fa-caret-down fa-dropdown"
+                                    ></i>
+                                </div>
+                                <!--  -->
+                                <div class="info__best--row">
+                                    <p class="info__best">#1 Best Seller</p>
+                                    <p class="info__xbox">
+                                        in Xbox One Headsets
+                                    </p>
+                                </div>
+                                <!--  -->
+                                <p class="bought">10K+ bought in past month</p>
+                                <div class="deail__line deail__line--mid"></div>
+                                <!--  -->
+                                <div class="info__price--row">
+                                    <div class="info__price">Price:</div>
+                                    <p class="info__money">$19.02</p>
+                                </div>
+                                <div class="info__free--row">
+                                    <p class="info__free">
+                                        FREE International Returns
+                                    </p>
+                                    <i
+                                        class="fa-solid fa-caret-down fadropdown"
+                                    ></i>
+                                </div>
+                                <p class="info__instock">In Stock</p>
+                                <p class="info__color">
+                                    Color: <span>Blue</span>
+                                </p>
+                                <!--  -->
+                                <div class="earphone__list">
+                                    <!-- item 1 -->
+                                    <div class="earphone__item">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41gYn6fBYlL._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="Dark-Green"
+                                            href="https://m.media-amazon.com/images/I/61eKXr+DYvL._AC_SL1000_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size"
+                                        >
+                                            $33.99
+                                        </p>
+                                    </div>
+                                    <!-- item 2 -->
+                                    <div class="earphone__item active">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51q0meZK6WL._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="Blue"
+                                            href="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SX425_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size active"
+                                        >
+                                            $19.02
+                                        </p>
+                                    </div>
+                                    <!-- item 3 -->
+                                    <div class="earphone__item">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51TSBkmLCGL._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="Green"
+                                            href="https://m.media-amazon.com/images/I/61mP9vPVqAL._AC_SL1000_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size"
+                                        >
+                                            $23.72
+                                        </p>
+                                    </div>
+                                    <!-- item 4 -->
+                                    <div class="earphone__item">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51Da8UQcNFL._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="Orange"
+                                            href="https://m.media-amazon.com/images/I/616vlLLgL6L._AC_SL1000_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size"
+                                        >
+                                            $25.06
+                                        </p>
+                                    </div>
+                                    <!-- item 8 -->
+                                    <div class="earphone__item">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41ICE8spdYL._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="Pink"
+                                            href="https://m.media-amazon.com/images/I/51nedLybRJL._AC_SL1000_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size"
+                                        >
+                                            $35.99
+                                        </p>
+                                    </div>
+                                    <!-- item 5 -->
+                                    <div class="earphone__item">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/418uhRvyX5L._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="Purple"
+                                            href="https://m.media-amazon.com/images/I/61OUmq3QsXL._AC_SL1301_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size"
+                                        >
+                                            $34.99
+                                        </p>
+                                    </div>
+                                    <!-- item 6 -->
+                                    <div class="earphone__item">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51KMwYj+TvS._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="Red"
+                                            href="https://m.media-amazon.com/images/I/61fE+nB3ZdS._AC_SL1000_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size"
+                                        >
+                                            $24.36
+                                        </p>
+                                    </div>
+                                    <!-- item 7 -->
+                                    <div class="earphone__item">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41BO7BXKd5S._SS36_.jpg"
+                                            alt=""
+                                            class="img__earphone"
+                                            color="White"
+                                            href="https://m.media-amazon.com/images/I/61R6Fk-HeIS._AC_SL1000_.jpg"
+                                        />
+                                        <p
+                                            class="option__form option__form--size"
+                                        >
+                                            $31.33
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="brand__row">
+                                    <p class="brand">Brand</p>
+                                    <p class="bango">BENGOO</p>
+                                </div>
+                                <div class="brand__row">
+                                    <p class="brand">Color</p>
+                                    <p class="bango bango__color">Blue</p>
+                                </div>
+                                <div class="brand__row">
+                                    <p class="brand">Ear Placement</p>
+                                    <p class="bango">Over Ear</p>
+                                </div>
+                                <div class="brand__row">
+                                    <p class="brand">Form Factor</p>
+                                    <p class="bango">Over Ear</p>
+                                </div>
+                                <div class="brand__row">
+                                    <p class="brand">Noise Control</p>
+                                    <p class="bango">Sound Isolation</p>
+                                </div>
+                                <div
+                                    class="deail__line deail__line--mid deail__line--top"
+                                ></div>
+                                <!--  -->
+                                <ul class="info__about">
+                                    About this item
+                                    <li class="info__describe">
+                                        <i class="fa-solid fa-circle-dot"></i
+                                        >【Multi-Platform Compatible】Support
+                                        PlayStation 4, New Xbox One, PC,
+                                        Nintendo 3DS, Laptop, PSP, Tablet, iPad,
+                                        Computer, Mobile Phone. Please note you
+                                        need an extra Microsoft Adapter (Not
+                                        Included) when connect with an old
+                                        version Xbox One controller.
+                                    </li>
+                                    <li class="info__describe">
+                                        <i class="fa-solid fa-circle-dot"></i
+                                        >【Surrounding Stereo Subwoofer】Clear
+                                        sound operating strong brass, splendid
+                                        ambient noise isolation and high
+                                        precision 40mm magnetic neodymium
+                                        driver, acoustic positioning precision
+                                        enhance the sensitivity of the speaker
+                                        unit, bringing you vivid sound field,
+                                        sound clarity, shock feeling sound.
+                                        Perfect for various games like Halo 5
+                                        Guardians, Metal Gear Solid, Call of
+                                        Duty, Star Wars Battlefront, Overwatch,
+                                        World of Warcraft Legion, etc.
+                                    </li>
+                                    <li class="info__describe">
+                                        <i class="fa-solid fa-circle-dot"></i>
+                                        【Noise Isolating Microphone】Headset
+                                        integrated onmi-directional microphone
+                                        can transmits high quality communication
+                                        with its premium noise-concellng
+                                        feature, can pick up sounds with great
+                                        sensitivity and remove the noise, which
+                                        enables you clearly deliver or receive
+                                        messages while you are in a game. Long
+                                        flexible mic design very convenient to
+                                        adjust angle of the microphone.
+                                    </li>
+                                    <li class="info__describe">
+                                        <i class="fa-solid fa-circle-dot"></i
+                                        >【Great Humanized Design】Superior
+                                        comfortable and good air permeability
+                                        protein over-ear pads, muti-points
+                                        headbeam, acord with human body
+                                        engineering specification can reduce
+                                        hearing impairment and heat sweat.Skin
+                                        friendly leather material for a longer
+                                        period of wearing. Glaring LED lights
+                                        desigend on the earcups to highlight
+                                        game atmosphere.
+                                    </li>
+                                    <li class="info__describe">
+                                        <i class="fa-solid fa-circle-dot"></i
+                                        >【Effortlessly Volume Control】High
+                                        tensile strength, anti-winding braided
+                                        USB cable with rotary volume controller
+                                        and key microphone mute effectively
+                                        prevents the 49-inches long cable from
+                                        twining and allows you to control the
+                                        volume easily and mute the mic as
+                                        effortless volume control one key mute.
+                                    </li>
+                                </ul>
+                                <!--  -->
+                                <div class="info__report">
+                                    <div class="report__row">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="report__message"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                                            />
+                                        </svg>
+                                        <p class="report__title">
+                                            Report an issue with this product or
+                                            seller
+                                        </p>
+                                    </div>
+                                    <p class="note">
+                                        <b> Note</b>: Products with electrical
+                                        plugs are designed for use in the US.
+                                        Outlets and voltage differ
+                                        internationally and this product may
+                                        require an adapter or converter for use
+                                        in your destination. Please check
+                                        compatibility before purchasing.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- artircle -->
+                            <div class="deail__artircle">
+                                <!-- artircle__addres -->
+                                <div class="artircle__addres">
+                                    <p class="buy"><b>Buy used:</b> $19.02</p>
+                                    <p class="shipped">
+                                        This item cannot be shipped to your
+                                        selected delivery location. Please
+                                        choose a different<br />delivery
+                                        location.
+                                    </p>
+                                    <div class="deliver__row">
+                                        <img
+                                            src="./assets/image/location_icon_dark.png"
+                                            alt=""
+                                            class="img__country--dark"
+                                        />
+                                        <p class="deliver__desc">
+                                            Deliver to Vietnam
+                                        </p>
+                                    </div>
+                                    <p class="like__new">
+                                        <b>Used: Like New</b> | Details
+                                    </p>
+                                    <p class="soldby">
+                                        <b>Sold by</b> Amazon Warehouse
+                                    </p>
+                                    <p class="fullfill">Fulfilled by Amazon</p>
+                                    <button class="add__cart">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <!-- Add to list -->
+                                <div class="artircle__list">
+                                    <button class="addto__list">
+                                        Add to list
+                                    </button>
+                                </div>
+                                <!-- Add an Accessory -->
+                                <div class="artircle__acces">
+                                    <p class="acces__heading">
+                                        Add an Accessory:
+                                    </p>
+                                    <div class="acces__line"></div>
+                                    <p class="acces__desc">
+                                        KOORUI Wireless Keyboard and Mouse
+                                        Combos, 2.4G Silent Full Size Keyboard
+                                        3DPI Mouse
+                                    </p>
+                                    <div class="acces__row">
+                                        <p class="acces__price">$21.98</p>
+                                        <button class="acces__btn">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="acces__line acces__line--top"
+                                    ></div>
+                                    <p class="acces__desc">
+                                        KOORUI Gaming Keyboard 60 Percent, Wired
+                                        Ultra-Compact Mechanical Keyboard 61
+                                    </p>
+                                    <div class="acces__row">
+                                        <p class="acces__price">$29.98</p>
+                                        <button class="acces__btn">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deail__line"></div>
+                        <!-- Best sellers -->
+                        <div class="bestsell">
+                            <div class="content">
+                                <div class="bestsell__content">
+                                    <h2 class="bestsell__heading">
+                                        Top purchases in the last 30 days
+                                    </h2>
+                                    <div class="bestsell__row">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41WKtIOD8TL._AC_SR160,160_.jpg"
+                                            alt=""
+                                            class="img__bestsell"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/414T7blaL6L._AC_SR160,160_.jpg"
+                                            alt=""
+                                            class="img__bestsell"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/71MGiPTwXAL._AC_SR160,160_.jpg"
+                                            alt=""
+                                            class="img__bestsell"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/81Q5bOpJw+L._AC_SR160,160_.jpg"
+                                            alt=""
+                                            class="img__bestsell"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/61oGokyedML._AC_SR160,160_.jpg"
+                                            alt=""
+                                            class="img__bestsell"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/614IQytqAuL._AC_SR160,160_.jpg"
+                                            alt=""
+                                            class="img__bestsell"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41o-o1sxliL._AC_SR420,330_.jpg"
+                                            alt=""
+                                            class="img__bestsell img__bestsell--heights"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/31HwuE6ZnxL._AC_SR320,320_.jpg"
+                                            alt=""
+                                            class="img__bestsell img__bestsell--heights"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41u8gY4L2DL._AC_SR320,320_.jpg"
+                                            alt=""
+                                            class="img__bestsell img__bestsell--heights"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/413v4O9M45L._AC_SR320,320_.jpg"
+                                            alt=""
+                                            class="img__bestsell img__bestsell--heights"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41pywRTlaIL._AC_SR320,320_.jpg"
+                                            alt=""
+                                            class="img__bestsell img__bestsell--heights"
+                                        />
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/41xqZMxoVWL._AC_SR320,320_.jpg"
+                                            alt=""
+                                            class="img__bestsell img__bestsell--heights"
+                                        />
+                                    </div>
+                                </div>
+                                <button
+                                    class="bestsell__btn bestsell__btn--left"
+                                >
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button
+                                    class="bestsell__btn bestsell__btn--right"
+                                >
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- blog back to top -->
+            <div class="blogback">
+                <a href="#" class="blogback__content">
+                    <p class="blogback__title">Back to top</p>
+                </a>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__content--top">
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Get to Know Us</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Careers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">About Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Investor Relations</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Devices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Science</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Make Money with Us</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Sell products on Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Sell on Amazon Business</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Sell apps on Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Become an Affiliate</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Advertise Your Products</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Self-Publish with Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Host an Amazon Hub</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">›See More Make Money with Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Amazon Payment Products</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Amazon Business Card</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Shop with Points</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Reload Your Balance</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Currency Converter</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Let Us Help You</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Amazon and COVID-<br />19</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Your Account</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Your Orders</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Shipping Rates & <br />Policies</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Returns & <br />Replacements</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Manage Your <br />Content and Devices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Assistant</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__contact">
+                <img
+                    src="./assets/image/amazon_logo.png"
+                    alt=""
+                    class="footer__logo"
+                />
+                <div class="footer__contact--row">
+                    <a href="" class="footer__btn">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <p class="btn__title">English</p>
+                        <div class="icon__caret">
+                            <i class="fa-solid fa-caret-up"></i>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </a>
+                    <a href="" class="footer__btn footer__btn--width">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p class="btn__title">USD - US. Dollar</p>
+                    </a>
+                    <a href="" class="footer__btn footer__btn--widthshort">
+                        <img
+                            src="./assets/image/us_flag.png"
+                            alt=""
+                            class="img__american"
+                        />
+                        <p class="btn__title">United States</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- modal -->
+        <div class="modal"></div>
+        <!-- toast -->
+        <div id="toast"></div>
+        <script src="./detail.js"></script>
+    </body>
+</html>

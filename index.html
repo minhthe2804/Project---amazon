@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>amazon-project</title>
+        <!-- Link reset -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+
+        <!-- link styles  -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- link detail -->
+        <link rel="stylesheet" href="./assets/css/detail.css" />
+
+        <link rel="stylesheet" href="./assets/css/cart.css" />
+
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="content">
+                <nav class="navbar">
+                    <!-- logo -->
+                    <figure class="navbar__logo">
+                        <img
+                            src="./assets/image/amazon_logo.png"
+                            alt=""
+                            class="logo__navbar"
+                        />
+                    </figure>
+
+                    <!-- country -->
+                    <a href="./test.html">
+                        <div class="navbar__country">
+                            <p class="navbar__delive">Deliver to</p>
+                            <div class="navbar__vn">
+                                <figure class="navbar__location">
+                                    <img
+                                        src="./assets/image/location_icon.png"
+                                        alt=""
+                                        class="location__navbar"
+                                    />
+                                </figure>
+                                <p class="navbar__vietnam">Vietnam</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- search -->
+                    <div class="navbar__search">
+                        <div class="navbar__blog">
+                            <p class="navbar__all">All</p>
+                            <figure class="navbar__dropdown">
+                                <img
+                                    src="./assets/image/dropdown_icon.png"
+                                    alt=""
+                                    class="dropdown__navbar"
+                                />
+                            </figure>
+                        </div>
+                        <input
+                            type="text"
+                            name=""
+                            id="input__search"
+                            class="input__search"
+                            placeholder="Search Amazon"
+                            autocomplete="off"
+                        />
+                        <figure class="navbar__camera">
+                            <img
+                                src="./assets/image/icon-camera.png"
+                                alt=""
+                                class="camera__navbar"
+                            />
+                        </figure>
+                        <figure class="search__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </figure>
+                        <i class="fa-solid fa-circle-xmark fa__close"></i>
+                    </div>
+
+                    <!-- city -->
+                    <div class="navbar__citys">
+                        <figure class="navbar__flag">
+                            <img
+                                src="./assets/image/us_flag.png"
+                                alt=""
+                                class="flag__navbar"
+                            />
+                        </figure>
+                        <div class="navbar__citys--row">
+                            <p class="navbar__city">En</p>
+                            <figure
+                                class="navbar__dropdown navbar__dropdown--near"
+                            >
+                                <img
+                                    src="./assets/image/dropdown_icon.png"
+                                    alt=""
+                                    class="dropdown__navbar"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- sigin -->
+                    <a href="./signin.html">
+                        <div class="navbar__signin">
+                            <p class="signin">Hello, sign in</p>
+                            <div class="sign__in--row">
+                                <p class="account">Account & Lists</p>
+                                <figure
+                                    class="navbar__dropdown navbar__dropdown--right"
+                                >
+                                    <img
+                                        src="./assets/image/dropdown_icon.png"
+                                        alt=""
+                                        class="dropdown__navbar"
+                                    />
+                                </figure>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- return -->
+                    <div class="navbar__return">
+                        <p class="return">Returns</p>
+                        <div class="return__row">
+                            <p class="order">& Orders</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <a href="./cart.html">
+                        <div class="navbar__cart">
+                            <figure class="cart__img">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </figure>
+                            <p class="cart__title">Cart</p>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- Menu -->
+            <div class="menu">
+                <div class="content">
+                    <div class="menu__content">
+                        <div class="menu__all--row">
+                            <figure class="menu__icon">
+                                <img
+                                    src="./assets/image/menu_icon.png"
+                                    alt=""
+                                    class="icon__menu"
+                                />
+                            </figure>
+                            <p class="all">All</p>
+                        </div>
+                        <div class="menu__list">
+                            <p class="menu__item">Today's Deal</p>
+                            <p class="menu__item">Buy again</p>
+                            <p class="menu__item">Customer Service</p>
+                            <p class="menu__item">Registry</p>
+                            <p class="menu__item">Gift Cards</p>
+                            <p class="menu__item">Sell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Baner -->
+            <div class="baner">
+                <div class="baner__content">
+                    <img
+                        src="./assets/image/header1.jpg"
+                        alt=""
+                        class="img__baner"
+                    />
+                    <img
+                        src="./assets/image/header2.jpg"
+                        alt=""
+                        class="img__baner"
+                    />
+                    <img
+                        src="./assets/image/header3.jpg"
+                        alt=""
+                        class="img__baner"
+                    />
+                    <img
+                        src="./assets/image/header4.jpg"
+                        alt=""
+                        class="img__baner"
+                    />
+                    <img
+                        src="./assets/image/header5.jpg"
+                        alt=""
+                        class="img__baner"
+                    />
+                    <img
+                        src="./assets/image/header6.jpg"
+                        alt=""
+                        class="img__baner"
+                    />
+                </div>
+                <button class="baner__left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="baner__right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Product -->
+            <div class="product product-header">
+                <div class="content">
+                    <div class="product__content">
+                        <div class="product__list">
+                            <!-- item 1 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Gaming accessories
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="./detail.html">
+                                                <img
+                                                    src="./assets/image/product-img1.1.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <div class="bag__row">
+                                            <p class="product__name">
+                                                Headsets
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.2.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Keyboards</p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.3.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Computer mice
+                                        </p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.4.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Chairs</p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore">See more</a>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Shop deals in Fashion
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.5.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Jeans under $50
+                                        </p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.6.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Top under $50
+                                        </p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.7.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Dresses under $50
+                                        </p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.8.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Shoes under $50
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore">See all deals</a>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Refresh your space
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.9.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Dining</p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.10.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Home</p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.11.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Kitchen</p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.12.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Health and Beauty
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore">See more</a>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">Deals in PCs</h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col product__col--pc">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/image/product-img1.13.jpg"
+                                                    alt=""
+                                                    class="img__product img__product--pc"
+                                                />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <a href="" class="shopnow">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product -->
+            <div class="product">
+                <div class="content">
+                    <div class="product__content">
+                        <div class="product__list">
+                            <!-- item 1 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Amazon Gadget Store
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://m.media-amazon.com/images/I/41aF1Kpc1iL._SY160_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Smartphones</p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://m.media-amazon.com/images/I/316r7290SLL._SY75_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Taples</p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://m.media-amazon.com/images/I/31qcGgiIK7L._SY75_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Laptops</p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://m.media-amazon.com/images/I/313zteqI9LL._SY75_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Tvs</p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore"
+                                    >See more from Amazon Gadgets</a
+                                >
+                            </div>
+                            <!-- item 2 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Deals on gifts for Dad
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_304_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Tech</p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_306_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Adventure gear
+                                        </p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_307_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Unique finds
+                                        </p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_305_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">
+                                            Health & wellness
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore">Shop all</a>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Fashion trends you like
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Dresses</p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Knits</p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Jackets</p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg"
+                                                    alt=""
+                                                    class="img__product"
+                                                />
+                                            </a>
+                                        </figure>
+                                        <p class="product__name">Jewelery</p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore">Explore more</a>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">Toys under $25</h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col product__col--pc">
+                                        <figure class="product__img">
+                                            <a href="">
+                                                <img
+                                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg"
+                                                    alt=""
+                                                    class="img__product img__product--pc"
+                                                />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <a href="" class="shopnow">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best sellers -->
+            <div class="bestsell">
+                <div class="content">
+                    <div class="bestsell__content">
+                        <h2 class="bestsell__heading">
+                            Top Sellers in Baby Products for you
+                        </h2>
+                        <div class="bestsell__row">
+                            <img
+                                src="./assets/image/bestsell-img1.1.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.2.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.3.jpg"
+                                alt=""
+                                class="img__bestsell img__bestsell--height"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.4.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.5.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.6.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.7.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.8.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.9.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.10.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.11.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.12.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.13.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.15.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.16.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.17.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.18.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img1.19.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                        </div>
+                    </div>
+                    <button class="bestsell__btn bestsell__btn--left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="bestsell__btn bestsell__btn--right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Best sellers -->
+            <div class="bestsell">
+                <div class="content">
+                    <div class="bestsell__content">
+                        <h2 class="bestsell__heading">
+                            Popular products in PC internationally
+                        </h2>
+                        <div class="bestsell__row">
+                            <img
+                                src="./assets/image/popular-img1.1.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.2.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.3.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.4.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.5.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.6.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.7.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.8.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.9.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.10.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.11.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img1.12.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                        </div>
+                    </div>
+                    <button class="bestsell__btn bestsell__btn--left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="bestsell__btn bestsell__btn--right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product product__three">
+                <div class="content">
+                    <div class="product__content">
+                        <div class="product__list">
+                            <!-- item 1 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Shop activity trackers and smartwatches
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col product__col--pc">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.1.jpg"
+                                                alt=""
+                                                class="img__product img__product--watch"
+                                            />
+                                        </figure>
+                                    </div>
+                                </div>
+                                <a href="" class="shopnow shopnow__bottom"
+                                    >Shop now</a
+                                >
+                            </div>
+                            <!-- item 2 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Warm & welcoming decor
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.2.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Wreaths & garland
+                                        </p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.3.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Outdoor decor
+                                        </p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.4.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Pillow & throws
+                                        </p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.5.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Wall art & mirrors
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore"
+                                    >See more fall finds</a
+                                >
+                            </div>
+                            <!-- item 3 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Gifts for every kind of dad
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.6.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Tech enthusiasts
+                                        </p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.7.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Adventure seekers
+                                        </p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.8.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Daily-routine dads
+                                        </p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="./assets/image/product-img3.9.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Hard to gift dads
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore">Shop all</a>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="product__item product__item--width">
+                                <h2 class="product__heading">
+                                    Gaming merchandise
+                                </h2>
+                                <div class="topic__row">
+                                    <img
+                                        src="./assets/image/gaming-img1.1.jpg"
+                                        alt=""
+                                        class="img__bestsell--topic"
+                                    />
+                                </div>
+                                <p class="topic__name">Shirt</p>
+                                <p class="topic__price">$50</p>
+                                <div class="bestsell__topic--row">
+                                    <img
+                                        src="./assets/image/gaming-img1.1.jpg"
+                                        alt=""
+                                        class="bestsell__topic active"
+                                    />
+                                    <img
+                                        src="./assets/image/gaming-img1.2.jpg"
+                                        alt=""
+                                        class="bestsell__topic"
+                                    />
+                                    <img
+                                        src="./assets/image/gaming-img1.3.jpg"
+                                        alt=""
+                                        class="bestsell__topic"
+                                    />
+                                    <img
+                                        src="./assets/image/gaming-img1.4.jpg"
+                                        alt=""
+                                        class="bestsell__topic"
+                                    />
+                                </div>
+                                <a href="" class="seemore seemore__topic"
+                                    >See more</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best sellers -->
+            <div class="bestsell">
+                <div class="content">
+                    <div class="bestsell__content">
+                        <h2 class="bestsell__heading">
+                            Top Sellers in Books for you
+                        </h2>
+                        <div class="bestsell__row bestsell__book">
+                            <img
+                                src="./assets/image/bestsell-img2.1.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.2.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.3.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.4.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.5.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.6.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.7.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.8.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.9.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.10.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.11.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.12.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.13.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.14.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.15.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.16.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.17.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.18.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.19.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.20.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.21.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.22.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.23.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/bestsell-img2.24.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="bestsell__btn bestsell__btn--left bestsell__book--prev"
+                    >
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button
+                        class="bestsell__btn bestsell__btn--right bestsell__book--next"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Best sellers -->
+            <div class="bestsell">
+                <div class="content">
+                    <div class="bestsell__content">
+                        <h2 class="bestsell__heading">
+                            Popular products in Beauty internationally
+                        </h2>
+                        <div class="bestsell__row">
+                            <img
+                                src="./assets/image/popular-img2.1.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.2.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.3.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.4.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.5.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.11.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.7.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.8.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.9.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.10.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.11.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.12.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.13.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.14.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.15.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.16.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.17.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.18.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img2.19.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                        </div>
+                    </div>
+                    <button class="bestsell__btn bestsell__btn--left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="bestsell__btn bestsell__btn--right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product product__three">
+                <div class="content">
+                    <div class="product__content">
+                        <div class="product__list">
+                            <!-- item 1 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Level up your gaming
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NW_GamingWeek_PC_v2_1x._SY116_CB558844445_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">Pc Gaming</p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NE_GamingWeek_Xbox_v2_1x._SY116_CB558844445_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">Xbox</p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SW_GamingWeek_Sony_v2_1x._SY116_CB558844445_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">Playstation</p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SE_GamingWeek_Nintendo_v2_1x._SY116_CB558844445_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Nintendo switch
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore seemore__gaming"
+                                    >Shop the latests in gaming</a
+                                >
+                            </div>
+                            <!-- item 2 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Score the top PCs & Accessories
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Desktops._SY116_CB558654384_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">Desktops</p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_laptop._SY116_CB558654384_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">Laptops</p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Hard_Drives._SY116_CB558654384_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Hard Drivers
+                                        </p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Accessories._SY116_CB558654384_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Pc Accessories
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore seemore__one"
+                                    >Shop all</a
+                                >
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Amazing gifts for every <br />Dad
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col product__col--pc">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Fatherday-24/Fuji_Fathers_Day_Dashboard_card_1x_EN._SY304_CB557908564_.jpg"
+                                                alt=""
+                                                class="img__product img__product--watch"
+                                            />
+                                        </figure>
+                                    </div>
+                                </div>
+                                <a href="" class="shopnow seemore__bottom"
+                                    >See more</a
+                                >
+                            </div>
+
+                            <!-- item 4 -->
+                            <div class="product__item">
+                                <h2 class="product__heading">
+                                    Curate your space
+                                </h2>
+                                <div class="product__row">
+                                    <!-- column 1 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/GWRefresh/MobileBTF/QC6/2024_QuadCard_Candles_186x116._SY116_CB557718780_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">Candles</p>
+                                    </div>
+                                    <!-- column 2 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/GWRefresh/MobileBTF/QC6/2024_QuadCard_Pillows_186x116._SY116_CB557731121_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Stylist pillowa
+                                        </p>
+                                    </div>
+                                    <!-- column 3 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/GWRefresh/MobileBTF/QC6/2024_QuadCard_IndoorGardening_186x116._SY116_CB557731121_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">
+                                            Indoor gardening
+                                        </p>
+                                    </div>
+                                    <!-- column 4 -->
+                                    <div class="product__col">
+                                        <figure class="product__img">
+                                            <img
+                                                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/GWRefresh/MobileBTF/QC6/2024_QuadCard_StorageOrg_186x116._SY116_CB557731121_.jpg"
+                                                alt=""
+                                                class="img__product"
+                                            />
+                                        </figure>
+                                        <p class="product__name">Storage</p>
+                                    </div>
+                                </div>
+                                <a href="" class="seemore seemore__top"
+                                    >See more</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best sellers -->
+            <div class="bestsell">
+                <div class="content">
+                    <div class="bestsell__content">
+                        <h2 class="bestsell__heading">
+                            Popular products in Apparel internationally
+                        </h2>
+                        <div class="bestsell__row">
+                            <img
+                                src="./assets/image/popular-img3.1.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.2.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.3.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.4.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.5.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3..6.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.7.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.8.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3..9.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.10.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.11.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.12.jpg"
+                                alt=""
+                                class="img__bestsell"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.13.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.14.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.15.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.16.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                            <img
+                                src="./assets/image/popular-img3.17.jpg"
+                                alt=""
+                                class="img__best"
+                            />
+                        </div>
+                    </div>
+                    <button class="bestsell__btn bestsell__btn--left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="bestsell__btn bestsell__btn--right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- blog back to top -->
+            <div class="blogback">
+                <a href="#" class="blogback__content">
+                    <p class="blogback__title">Back to top</p>
+                </a>
+            </div>
+
+            <div id="toast"></div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__content--top">
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Get to Know Us</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Careers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">About Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Investor Relations</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Devices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Science</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Make Money with Us</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Sell products on Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Sell on Amazon Business</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Sell apps on Amazon</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href=""> Become an Affiliate</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Advertise Your Products</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Self-Publish with Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Host an Amazon Hub</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">›See More Make Money with Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Amazon Payment Products</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Amazon Business Card</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Shop with Points</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Reload Your Balance</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Currency Converter</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column -->
+                <div class="footer__column">
+                    <h2 class="footer__heading">Let Us Help You</h2>
+                    <!-- footer__list -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="">Amazon and COVID-<br />19</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Your Account</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Your Orders</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Shipping Rates & <br />Policies</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Returns & <br />Replacements</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Manage Your <br />Content and Devices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Amazon Assistant</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__contact">
+                <img
+                    src="./assets/image/amazon_logo.png"
+                    alt=""
+                    class="footer__logo"
+                />
+                <div class="footer__contact--row">
+                    <a href="" class="footer__btn">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <p class="btn__title">English</p>
+                        <div class="icon__caret">
+                            <i class="fa-solid fa-caret-up"></i>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </a>
+                    <a href="" class="footer__btn footer__btn--width">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p class="btn__title">USD - US. Dollar</p>
+                    </a>
+                    <a href="" class="footer__btn footer__btn--widthshort">
+                        <img
+                            src="./assets/image/us_flag.png"
+                            alt=""
+                            class="img__american"
+                        />
+                        <p class="btn__title">United States</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- modal -->
+        <div class="modal"></div>
+
+        <!-- search product -->
+        <div class="seacrh__product">
+            <div class="search__product--content"></div>
+        </div>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up</title>
+        <!-- Link reset -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+
+        <!-- link styles  -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- link detail -->
+        <link rel="stylesheet" href="./assets/css/detail.css" />
+
+        <!-- link sign in  -->
+        <link rel="stylesheet" href="./assets/css/sign.css" />
+
+        <!-- link sign up -->
+        <link rel="stylesheet" href="./assets/css/signup.css" />
+
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <a href="./">
+            <img
+                src="./assets/image/amazon_logo_dark.png"
+                alt=""
+                class="img__signin"
+            />
+        </a>
+        <div class="singin">
+            <div class="sign__in">
+                <div class="signin__blog signup__blog">
+                    <div class="signin__content">
+                        <h2 class="signin__heading">Create account</h2>
+                        <form class="form" action="./succes.html">
+                            <!-- your name -->
+                            <div class="form__group">
+                                <label for="name" class="email__phone"
+                                    >Your name</label
+                                >
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="signup__name"
+                                    placeholder="First and last name"
+                                    autocomplete="off"
+                                />
+                                <p class="text__novalid">
+                                    Bạn cần nhập một tên bất kì
+                                </p>
+                            </div>
+                            <!-- email or phone -->
+                            <div class="form__group">
+                                <label for="emailphone" class="email__phone"
+                                    >Mobile number or email</label
+                                >
+                                <input
+                                    type="text"
+                                    name="emailorphone"
+                                    id="emailphone"
+                                    class="signin__emailphone"
+                                    autocomplete="off"
+                                />
+                                <p class="text__novalid">
+                                    Đây không phải là email hoặc số điện thoại
+                                    hợp lệ
+                                </p>
+                            </div>
+                            <!-- password -->
+                            <div class="form__group">
+                                <label for="pass" class="email__phone"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="pass"
+                                    class="signup__password"
+                                    placeholder="At least 8 characters"
+                                    autocomplete="off"
+                                />
+                                <i class="fa-solid fa-eye eye__one"></i>
+                                <div class="line__eye"></div>
+                                <p class="text__novalid">
+                                    Mật khẩu của bạn phải dài ít nhất 8 kí tự
+                                </p>
+                            </div>
+                            <!-- cofirm password -->
+                            <div class="form__group">
+                                <label for="confirm" class="email__phone"
+                                    >Re-enter password</label
+                                >
+                                <input
+                                    type="password"
+                                    name="confirm"
+                                    id="confirm"
+                                    class="confirm__password"
+                                    autocomplete="off"
+                                />
+                                <i class="fa-solid fa-eye eye__two"></i>
+                                <div class="line__eye line__eye--two"></div>
+                                <p class="text__novalid">
+                                    Bạn cần nhập đúng mật khẩu ở trên
+                                </p>
+                            </div>
+                            <button type="submit" class="signin__btn">
+                                Continue
+                            </button>
+                        </form>
+
+                        <p class="by__continuing">
+                            By creating an account, you agree to
+                            <span>Conditions of Use</span> and
+                            <span>Privacy Notice.</span>
+                        </p>
+
+                        <div class="signin__line"></div>
+                        <p class="buying">Buying for work?</p>
+                        <p class="sign__shopon">
+                            Create a free business account
+                        </p>
+                        <div class="singline signup__line"></div>
+                        <div class="already__row">
+                            <p class="already">Already have an account?</p>
+                            <a href="./signin.html">
+                                <div class="signup__signin--row">
+                                    <p class="signup__signin--title">Sign in</p>
+                                    <i
+                                        class="fa-solid fa-caret-right caret__right--color"
+                                    ></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="singline"></div>
+            <div class="sign__footer">
+                <div class="sign__footer--row">
+                    <p class="sign__footer--title">Conditions of Use</p>
+                    <p class="sign__footer--title">Privacy Notice</p>
+                    <p class="sign__footer--title">Help</p>
+                </div>
+                <p class="sign__footer__desc">
+                    © 1996-2024, Amazon.com, Inc. or its affiliates
+                </p>
+            </div>
+        </div>
+        <div id="toast"></div>
+        <script src="./sigup.js"></script>
+    </body>
+</html>
